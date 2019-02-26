@@ -55,7 +55,7 @@ public:
     ucdrBuffer* reader = (ucdrBuffer*)msg_buf;
     for(uint8_t i = 0; i < sizeof(transforms)/sizeof(geometry_msgs::TransformStamped); i++)
     {
-      (void) transforms[i].serialize(reader, &topic->transforms[i]);
+      (void) transforms[i].deserialize(reader, &topic->transforms[i]);
     }
     
     return !reader->error;
