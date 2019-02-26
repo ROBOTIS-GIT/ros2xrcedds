@@ -36,7 +36,7 @@ class TransformStamped : public ros2::Topic<TransformStamped>
 {
 public: 
     std_msgs::Header header;
-    char child_frame_id[255];
+    char child_frame_id[64];
     geometry_msgs::Transform transform;
 
   TransformStamped():
