@@ -35,7 +35,7 @@ public:
   geometry_msgs::TransformStamped transforms[4];
 
   TFMessage():
-    Topic("tf2_msgs::msg::dds_::TFMessage_", "TFMessage")
+    Topic("tf2_msgs::msg::dds_::TFMessage_", "TFMessage", TF2_MSGS_TFMESSAGE_ID)
   { 
   }
 

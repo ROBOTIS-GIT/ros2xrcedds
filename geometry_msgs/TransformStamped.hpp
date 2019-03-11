@@ -40,7 +40,7 @@ public:
     geometry_msgs::Transform transform;
 
   TransformStamped():
-    Topic("geometry_msgs::msg::dds_::TransformStamped_", "TransformStamped"),
+    Topic("geometry_msgs::msg::dds_::TransformStamped_", "TransformStamped", GEOMETRY_MSGS_TRANSFORM_STAMPED_ID),
     header(), transform()
   { 
     memset(child_frame_id, 0, sizeof(child_frame_id));
