@@ -165,8 +165,6 @@ bool xrcedds::registerTopic(xrcedds::Participant_t* participant, const char* top
     ret = true;
   }
 
-  ret = true;
-
   return ret;
 }
 
